@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Milaș Mihaela" />
+    <meta
+      name="keywords"
+      content="Pensiunea Roua Dimineții, cameră standard, cameră deluxe, apartament, contact, confort "
+    />
+    <meta
+      name="description"
+      content="Descoperă pensiunea Roua Dimineții,
+     un loc de poveste situat în inima naturii.
+      Bucură-te de peisaje spectaculoase, confort deosebit și
+       ospitalitate autentică. Planifică vacanța perfectă la noi!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pensiunea Roua Dimineții</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* meniu */
+      nav {
+        display: flex;
+        background-color: rgb(248, 224, 241);
+        align-items: center;
+        padding: 13px;
+      }
+      nav img {
+        height: 10vh;
+      }
+      .nav-item {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        font-size: 1.3em;
+      }
+
+      body {
+        font-family: "Lora", serif;
+        background-image: url(blurred.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .body2 {
+        margin: 10px;
+      }
+      h2 {
+        border: 3px solid #c0c0c0;
+        background-color: #fffafa;
+        padding: 12px;
+      }
+      h3 {
+        border: 3px solid #c0c0c0;
+        background-color: #f5f1f1;
+        padding-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .pe-final {
+        background-color: #f8f8ff;
+        border: 2px solid #c0c0c0;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .container {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+      }
+      .dispalyflex {
+        display: flex;
+      }
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .gallery-item {
+        flex: 25%;
+        margin: 5px;
+        border-radius: 8px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* footer */
+      footer {
+        background-color: rgb(248, 224, 241);
+        padding: 20px 0;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+      }
+
+      .footer-item {
+        margin: 0 10px;
+        text-align: center;
+      }
+
+      .footer-logo {
+        height: 10vh;
+        margin-bottom: 5px;
+      }
+
+      .pensiune-nume {
+        font-size: 1.2em;
+        margin: 0;
+      }
+
+      .footer-item p,
+      .footer-item a {
+        margin: 5px 0;
+        color: black;
+        text-decoration: none;
+      }
+
+      .footer-item a:hover {
+        text-decoration: none;
+      }
+
+      .social-icons img {
+        width: 25px;
+        margin: 0 5px;
+      }
+
+      .social-icons a {
+        display: inline-block;
+      }
+
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer-item {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img
+              src="logo.png"
+              alt="o căsuță galbenă lângă un copac și cateva păsări"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#meniupensiune"
+            aria-controls="meniupensiune"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="meniupensiune">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#PensiuneaRouaDimineții"
+                  ><h1 class="fs-4">Pensiunea Roua Dimineții</h1></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Cazare">Cazare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Facilități">Facilități</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Oferte">Oferte</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="slider" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="pensiunea.jpg"
+            class="d-block w-100"
+            alt="o pensiune frumoasă în mijlocul pădurii lângă un lac"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="receptie.jpg"
+            class="d-block w-100"
+            alt="recepția pensiunii într-un stil clasic și un domn în centru care își acoperă fața"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="sala-de-mese.png"
+            class="d-block w-100"
+            alt="sala de mese a pensiunii cu mese de lemn și scaune negre"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pool.png"
+            class="d-block w-100"
+            alt="o piscină cu vedere la munte"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pool-view.png"
+            class="d-block w-100"
+            alt="piscina dintr-o altă perspectivă cu o femeie în ea"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#slider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="body2">
+      <div class="pe-final">
+        <p>
+          Pensiunea Roua Dimineții este o oază de liniște, situată la poalele
+          munților, într-un peisaj idilic care îmbină frumusețea naturii cu
+          confortul modern. Locația noastră este ideală pentru cei care caută să
+          evadeze din agitația urbană și să redescopere bucuria relaxării în
+          mijlocul naturii. Cu o arhitectură inspirată din tradițiile locale și
+          dotări moderne, pensiunea noastră oferă camere confortabile, servicii
+          de top și o atmosferă primitoare. De la priveliștile spectaculoase
+          până la mâncărurile tradiționale pregătite cu ingrediente locale,
+          fiecare detaliu a fost gândit pentru a oferi o experiență autentică.
+          Pe lângă relaxare, oaspeții noștri pot explora împrejurimile: trasee
+          montane, cascade, sau atracții turistice de renume. Indiferent dacă
+          veniți pentru un weekend romantic, o vacanță în familie sau o escapadă
+          cu prietenii, Pensiunea Roua Dimineții este alegerea perfectă.
+        </p>
+      </div>
+      <div id="Cazare">
+        <h2>Cazare</h2>
+        <h3>Tarife</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Cameră single - 150 RON/noapte</li>
+          <li class="list-group-item">
+            Cameră dublă standard - 250 RON/noapte
+          </li>
+          <li class="list-group-item">Cameră twin - 240 RON/noapte</li>
+          <li class="list-group-item">Cameră triplă - 350 RON/noapte</li>
+          <li class="list-group-item">Apartament - 450 RON/noapte</li>
+        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  src="standard.png"
+                  class="card-img-top"
+                  alt="imaginea unei camere cu un pat dublu în centru și un dulap din lemn în partea stângă"
+                />
+                <div class="card-body">
+                  <p class="card-title">Cameră dublă standard</p>
+                  <p class="card-text">
+                    O cameră primitoare, perfectă pentru două persoane, cu un
+                    pat matrimonial și un decor plăcut, ideală pentru un sejur
+                    relaxant.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  src="twin.png"
+                  class="card-img-top"
+                  alt="imaginea unei camere cu 2 paturi de o persoană din lemn"
+                />
+                <div class="card-body">
+                  <p class="card-title">Cameră twin</p>
+                  <p class="card-text">
+                    Concepută pentru cei care preferă paturi separate, această
+                    cameră oferă un spațiu confortabil și bine organizat pentru
+                    doi oaspeți.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  src="camera3.png"
+                  class="card-img-top"
+                  alt="imaginea unei camere moderne cu un pat triplu între două noptiere"
+                />
+                <div class="card-body">
+                  <p class="card-title">Cameră triplă</p>
+                  <p class="card-text">
+                    O alegere excelentă pentru grupuri mici, oferind suficient
+                    spațiu și un aranjament flexibil al paturilor pentru trei
+                    persoane.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  src="apartament.png"
+                  class="card-img-top"
+                  alt="imaginea unei camere mari cu un pat din lemn, o masă de machiaj și o comodă"
+                />
+                <div class="card-body">
+                  <p class="card-title">Apartament</p>
+                  <p class="card-text">
+                    Un spațiu generos, cu zone separate pentru dormit și
+                    relaxare, ideal pentru o experiență mai intimă și
+                    personalizată.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Facilități">
+        <h2>Facilități</h2>
+        <h3>Camere Confortabile și Elegante</h3>
+        <div class="pe-final">
+          <p>
+            Camerele noastre sunt decorate cu atenție la detalii, combinând
+            eleganța și confortul pentru a oferi oaspeților un spațiu ideal de
+            relaxare. Fiecare cameră este echipată cu paturi confortabile,
+            televizoare cu ecran plat și acces gratuit la internet Wi-Fi. Pentru
+            a vă asigura un sejur cât mai plăcut, băile private sunt dotate cu
+            articole de toaletă de lux și uscător de păr. De asemenea,
+            balcoanele oferă o vedere spectaculoasă asupra naturii
+            înconjurătoare, un loc perfect pentru a vă începe ziua în liniște.
+          </p>
+        </div>
+        <h3>Experiență Culinară Excepțională</h3>
+        <div class="pe-final">
+          <p>
+            Restaurantul nostru vă întâmpină cu o atmosferă caldă și un meniu
+            diversificat, în care preparatele tradiționale românești se îmbină
+            armonios cu specialitățile internaționale. Bucătarii noștri
+            utilizează doar ingrediente proaspete, de la producători locali,
+            pentru a crea feluri de mâncare savuroase și autentice. Vinurile
+            selecte din colecția noastră completează fiecare masă, oferind o
+            experiență culinară desăvârșită.
+          </p>
+        </div>
+        <h3>Activități în Natură și Aventură</h3>
+        <div class="pe-final">
+          <p>
+            Amplasată într-un cadru natural deosebit, pensiunea noastră oferă
+            numeroase posibilități de petrecere a timpului liber. Oaspeții pot
+            explora traseele montane din apropiere prin drumeții sau plimbări cu
+            bicicleta, bucurându-se de aerul curat și peisajele pitorești.
+            Pentru cei în căutare de aventură, organizăm excursii cu ATV-ul, iar
+            cei mici se pot bucura de un spațiu de joacă amenajat cu grijă.
+          </p>
+        </div>
+        <h3>Servicii Suplimentare</h3>
+        <div class="pe-final">
+          <p>
+            Pentru a vă face șederea cât mai plăcută, oferim o gamă largă de
+            servicii suplimentare, inclusiv parcare privată gratuită, servicii
+            de transfer către aeroport, recepție deschisă non-stop și servicii
+            de spălătorie. Suntem dedicați să vă oferim o experiență de neuitat,
+            într-un mediu prietenos și relaxant.
+          </p>
+        </div>
+        <h3>Testimoniale</h3>
+        <div class="pe-final">
+          <p>Ce spun oaspeții noștri despre Pensiunea Roua Dimineții?</p>
+          <p>
+            La Pensiunea Roua Dimineții, fiecare oaspete pleacă cu amintiri
+            frumoase și dorința de a reveni. Iată câteva dintre poveștile celor
+            care au ales să ne viziteze:
+          </p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Testimonial 1
+              </button>
+            </p>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                “Pensiunea Roua Dimineții este locul perfect pentru relaxare.
+                Camerele sunt extrem de confortabile, iar priveliștile sunt de
+                vis. Echipa este foarte prietenoasă și mereu dornică să te
+                ajute. Cu siguranță vom reveni!” – Ana Mureșan, București
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Testimonial 2
+              </button>
+            </p>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                “Mâncarea de la restaurant este absolut delicioasă – se simte că
+                totul este proaspăt și autentic. Ne-am simțit ca acasă, iar
+                grădina este un colț de rai. Recomand pentru oricine își dorește
+                liniște și relaxare în mijlocul naturii.” – Mihai Popescu,
+                Cluj-Napoca.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Testimonial 3
+              </button>
+            </p>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                “Experiența la Pensiunea Roua Dimineții a fost absolut
+                incredibilă! De la răsăriturile liniștitoare, până la
+                ospitalitatea personalului, totul a fost perfect. Am adorat
+                plimbările în natură și traseele recomandate de echipă. Recomand
+                cu drag!” -Adriana Elena Pavel, Brașov
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img
+              src="candles.png"
+              alt="imaginea a două lumânări roșii aprinse pe o tejghea"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="breakfast.png"
+              alt="imaginea unui Bufet Suedez alcătuit din șuncă, brânză, unt, fructe, sosuri"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="breakfast2.png"
+              alt="imaginea unui mic dejun copios format din omletă, ovăz cu fructe, cafea, șuncă"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="baie.png"
+              alt="imaginea unei băi moderne formată dintr-un duș vertical"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="baie1.png"
+              alt="imaginea unei băi moderne luminoase și din lemn"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="baie2.png"
+              alt="imaginea unei văni cu o bombă de baie, un prosop și o lumânare"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="Oferte">
+        <h2>Oferte</h2>
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>Crăciun</strong></p>
+            <p class="card-text">
+              Bucură-te de magia Crăciunului cu un sejur de 3 nopți la un preț
+              special. Pachetul include cazare cu mic dejun, cina festivă de
+              Crăciun cu preparate tradiționale, colinde live și cadouri
+              surpriză pentru copii. Relaxează-te în atmosfera caldă a
+              sărbătorilor și savurează fiecare moment alături de cei dragi.
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>Revelion</strong></p>
+            <p class="card-text">
+              Bucură-te de magia Crăciunului cu un sejur de 3 nopți la un preț
+              special. Pachetul include cazare cu mic dejun, cina festivă de
+              Crăciun cu preparate tradiționale, colinde live și cadouri
+              surpriză pentru copii. Relaxează-te în atmosfera caldă a
+              sărbătorilor și savurează fiecare moment alături de cei dragi.
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>Valentine`s Day</strong></p>
+            <p class="card-text">
+              Surprinde persoana iubită cu un sejur de 2 nopți la un preț
+              special pentru cupluri. Pachetul include cazare într-o cameră
+              decorată romantic, mic dejun, cină festivă la lumina lumânărilor
+              și acces la spa pentru clipe de răsfăț în doi. Veți primi o sticlă
+              de vin spumant din partea casei.
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>1 Martie</strong></p>
+            <p class="card-text">
+              Întâmpină primăvara cu un pachet de 2 nopți la un preț redus.
+              Oferta include cazare cu mic dejun, o cină festivă de Mărțișor cu
+              preparate tradiționale și un mărțișor simbolic pentru fiecare
+              doamnă și domnișoară. Răsfață-te cu aer curat și peisaje
+              încântătoare!
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>8 Martie</strong></p>
+            <p class="card-text">
+              Sărbătorește Ziua Femeii cu un pachet de 2 nopți la un preț
+              avantajos. Pachetul include cazare cu mic dejun, cină festivă cu
+              muzică live și acces la spa pentru momente de relaxare și răsfăț.
+              Fiecare doamnă va primi un mic cadou din partea noastră.
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-title"><strong>1 Mai</strong></p>
+            <p class="card-text">
+              Petrece mini-vacanța de 1 Mai cu un sejur de 3 nopți la un preț
+              special. Oferta include cazare cu mic dejun, acces la facilitățile
+              pensiunii și activități în aer liber, precum drumeții și plimbări
+              cu bicicleta. Relaxează-te și bucură-te de natură alături de
+              familie și prieteni.
+            </p>
+            <a href="#" class="btn btn-primary">Rezervă acum!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item">
+          <img
+            src="logo.png"
+            alt="o căsuță galbenă lângă un copac și cateva păsări"
+            class="footer-logo"
+          />
+          <p class="pensiune-nume">Pensiunea Roua Dimineții</p>
+        </div>
+        <div class="footer-item">
+          <p>
+            Email:
+            <a href="mailto:contact@pensiunearouadimineții.ro"
+              >contact@pensiunearouadimineții.ro</a
+            >
+          </p>
+          <p>Telefon: <a href="tel:0757 531 825">0757 531 825</a></p>
+          <p>
+            Adresă: Strada Poiana Soarelui, Nr. 15, Sat Măgura, Comuna Moieciu,
+            Județul Brașov, România
+          </p>
+          <p>
+            &copy; 2025 Pensiunea Roua Dimineții. Toate drepturile rezervate.
+          </p>
+        </div>
+        <div class="footer-item">
+          <div class="social-icons">
+            <a href="https://whatsapp.com" target="_blank"
+              ><img src="whatsapp.png" alt="whatsapp"
+            /></a>
+            <a href="https://instagram.com" target="_blank"
+              ><img src="instagram.png" alt="Instagram"
+            /></a>
+            <a href="https://facebook.com" target="_blank"
+              ><img src="facebook.png" alt="Facebook"
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img src="twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
